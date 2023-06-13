@@ -1,12 +1,14 @@
 import * as React from "react"
 import profileImage from '../images/profile.jpg';
 import '../styles/index.css'
-import infos from '../data/info.js';
+import infos from '../data/info';
+import Navbar from "../components/Navbar/Navbar";
 
 
 const IndexPage = () => {
   return (
       <main className="pageStyles">
+        <Navbar />
         <div className="columnStyles">
             <h1 className="headingStyles">
               Jason Jugo
