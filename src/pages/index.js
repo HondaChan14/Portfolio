@@ -1,5 +1,6 @@
 import * as React from "react"
 import profileImage from '../images/profile.jpg';
+import '../styles/index.css'
 import infos from '../data/info.js';
 
 
