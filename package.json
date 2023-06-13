@@ -1,0 +1,28 @@
+{
+  "name": "jason-portfolio-2023",
+  "version": "1.0.0",
+  "private": true,
+  "description": "jason-portfolio-2023",
+  "author": "HondaChan14",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "@vanilla-extract/css": "^1.11.1",
+    "@vanilla-extract/webpack-plugin": "^2.2.0",
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-mdx": "^5.10.0",
+    "gatsby-plugin-vanilla-extract": "^4.0.1",
+    "gatsby-source-filesystem": "^5.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
