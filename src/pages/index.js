@@ -16,8 +16,9 @@ const IndexPage = () => {
               <br />
               <span className="headingAccentStyles">— Software Engineer</span>
             </h1>
-
-            <h2>A Software Engineer Building Tomorrow's Solutions, One Line of Code at a Time</h2>
+          <div className="container">
+            <h2>Building Tomorrow's Solutions, One Line of Code at a Time</h2>
+          </div>
             <p></p>
             <div className="columnStyles">
               <img src={profileImage} alt="Profile of Jason" className="profileStyle"/>
@@ -26,7 +27,7 @@ const IndexPage = () => {
               <div className="columnStyles">
                 <ul className="listStyles">
                   {infos.slice(0, 2).map(info => (
-                    <li key={info.url} className="listItemStyles" style={{color: info.color }}>
+                    <li key={info.url} className="listItemStyles">
                       <span>
                         <a
                           className="linkStyle"
@@ -45,7 +46,7 @@ const IndexPage = () => {
               <div className="columnStyles">
                 <ul className="listStyles">
                   {infos.slice(2).map(info => (
-                    <li key={info.url} className="listItemStyles" style={{color: info.color }}>
+                    <li key={info.url} className="listItemStyles">
                       <span>
                         <a
                           className="linkStyle"

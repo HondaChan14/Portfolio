@@ -12,7 +12,7 @@ const Navbar = () => {
         <>
             <nav className="navStyles">
                 <button className="navButtonStyles" onClick={handleMenuToggle}>
-                {isOpen ? <TiThMenuOutline /> : <TiThMenu />}
+                {isOpen ? <TiThMenuOutline className='iconOpen'/> : <TiThMenu  className='iconClosed'/>}
                 </button>
             </nav>
 

@@ -32,6 +32,10 @@ const skillsSection  = {
             skillName: "NPM",
             fontAwesomeClassname: "fab fa-npm"
         },
+        {
+            skillName: "Git",
+            fontAwesomeClassname: "fab fa-square-git"
+        },
     ],
     display: true // Set false to hide this section, defaults to true
 }

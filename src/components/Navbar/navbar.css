@@ -1,5 +1,5 @@
+@import url("../../styles/Global.css");
 .navStyles {
-    color: #88A6A6;
     position: fixed;
     top: 0;
     right: 0;
@@ -7,8 +7,8 @@
   }
   
   .menuItemsStyles {
-    background-color: #A4422A;
-    color: #FAF9F8;
+    background-color: var(--clr-accent);
+    color: var(--clr-secondary);
     position: fixed;
     top: 0;
     left: 0;
@@ -21,10 +21,10 @@
     padding-top: 60px;
     padding-left: 20px;
   }
-  
+
   .menuBar {
     display: block;
-    color: #FAF9F8;
+    color: var(--clr-secondary);
     margin-bottom: 10px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -55,5 +55,13 @@
   .menuHeader {
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .iconOpen {
+    color: var(--clr-secondary);
+  }
+
+  .iconClosed {
+    color: var(--clr-accent);
   }
   
