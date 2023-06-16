@@ -3,6 +3,7 @@ import profileImage from '../images/profile.jpg';
 import '../styles/index.css'
 import infos from '../data/info';
 import Navbar from "../components/Navbar/Navbar";
+import SoftwareSkills from "../components/SoftwareSkills/SoftwareSkills";
 
 
 const IndexPage = () => {
@@ -60,6 +61,7 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+          <SoftwareSkills />
       </main>
   )
 }
