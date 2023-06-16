@@ -1,0 +1,102 @@
+:root {
+    --clr-text: #0a0f10;
+    --clr-background: #ffffff; 
+    --clr-primary: #3c4c5d; 
+    --clr-secondary: #e9e9f1;
+    --clr-accent: #3c3c5d;
+
+    --ff-base:'IBM Plex Sans', sans-serif;
+    --ff-accent:'IBM Plex Sans Condensed', sans-serif;
+
+    --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem); /* Font-Size 300: 18.00px → 20.00px */
+    --fs-400: clamp(1.35rem, calc(1.20rem + 0.73vw), 1.77rem); /* Font-Size 400: 21.60px → 28.28px */
+    --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.50rem); /* Font-Size 500: 25.92px → 39.99px */
+    --fs-600: clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem); /* Font-Size 600: 31.10px → 56.54px */
+    --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5.00rem); /* Font-Size 700: 37.32px → 79.95px */
+    --fs-800: clamp(2.80rem, calc(1.32rem + 7.42vw), 7.07rem); /* Font-Size 800: 44.79px → 113.05px */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: #ececec;
+        --clr-background: #333333;
+        --clr-primary: #66aacc;
+        --clr-secondary: #f1c16e;
+        --clr-accent: #e68f6f;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.pageStyles {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    background-color: var(--clr-background);
+    width: min(100% -3rem, 55ch);
+    margin-inline: auto;
+    line-height: 1.6;
+    color: var(--clr-text);
+}
+
+.container {
+    background-color: var(--clr-accent);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-accent);
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    color: var(--clr-primary);
+}
+
+h2 {
+    font-size: var(--fs-600);
+    color: var(--clr-secondary);
+}
+
+h3 {
+    font-size: var(--fs-500);
+    color: var(--clr-text);
+}
+
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-accent);
+}
+
+::marker {
+    color: var(--clr-primary);
+}

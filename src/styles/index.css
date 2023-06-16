@@ -1,17 +1,7 @@
-
+@import url("Global.css");
 /* For typical mobile devices */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-    html {
-        background-color: #FAF9F8;
-    }
 
-    .pageStyles {
-        color: #232129;
-        padding: 15px;
-        font-family: -apple-system, Roboto, sans-serif, serif;
-        display: flex;
-        flex-direction: column;
-    }
     .listContainer {
         display: flex;
         max-height: 180px;
@@ -29,14 +19,12 @@
     }
     
     .linkStyle {
-        color: #88A6A6;
         font-weight: bold;
         font-size: 1em;
         vertical-align: 5%;
     }
     
     .descriptionStyle {
-        color: #232129;
         font-size: 14;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -52,8 +40,12 @@
     
     .profileStyle {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 80px;
     }
 
+    .headingAccentStyles {
+        color: var(--clr-accent);
+        font-size: 2rem;
+    }
 }
