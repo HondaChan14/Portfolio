@@ -1,0 +1,50 @@
+.skills-container {
+    display: flex;
+    width: 55%;
+    overflow: hidden;
+    background-color: blue;
+    padding: 40px;
+}
+
+.dev-icons {
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.dev-icons-list {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #868e96;
+}
+
+.dev-icons-list:hover{
+    color: #257bd1;
+}
+
+/* For typical mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .skills-container {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        background-color: blue;
+        padding: 2px;
+    }
+
+    .dev-icons {
+        font-size: 2rem;
+    }
+
+    .dev-icons-list {
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+        color: #868e96;
+    }
+    
+}
