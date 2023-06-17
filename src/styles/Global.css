@@ -45,25 +45,25 @@ img {
     display: block;
 }
 
-.pageStyles {
-    padding: 15px;
+.main-container {
+    /* padding: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     font-family: var(--ff-base);
     font-size: var(--fs-400);
     background-color: var(--clr-background);
-    width: min(100% -3rem, 55ch);
+    width: min(100% - 3rem, 55ch);
     margin-inline: auto;
     line-height: 1.6;
     color: var(--clr-text);
+    padding: 20px 0px;
 }
 
 .container {
     background-color: var(--clr-accent);
     border-radius: 10px;
     padding: 10px 15px;
-    margin: 10px 0px;
-    text-align: center;
+    margin: 15px 0px;
 }
 
 h1, h2, h3 {
@@ -84,7 +84,7 @@ h2 {
 
 h3 {
     font-size: var(--fs-500);
-    color: var(--clr-text);
+    color: var(--clr-secondary);
 }
 
 a {
