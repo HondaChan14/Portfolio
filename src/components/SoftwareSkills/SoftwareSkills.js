@@ -7,16 +7,16 @@ import skillsSection from "../../data/skillSection";
 export default function SoftwareSkills() {
   return (
     <div>
-      <div className="skillsContainer">
-        <ul className="devIconsList">
+      <div className="skills-container">
+        <ul className="dev-icons-list">
           {skillsSection && skillsSection.softwareSkills.map((skills, i) => {
             return (
               <li
                 key={i}
-                className="devIconContainer"
+                className="dev-icon-container"
                 name={skills.skillName}
               >
-                <FontAwesomeIcon icon={skills.fontAwesomeClassname} className="faIcon"/>
+                <FontAwesomeIcon icon={skills.fontAwesomeClassname} className="fa-icon"/>
                 <p>{skills.skillName}</p>
               </li>
             );
