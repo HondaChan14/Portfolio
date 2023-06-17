@@ -1,67 +1,27 @@
 import * as React from "react"
 import profileImage from '../images/profile.jpg';
 import '../styles/index.css'
-import infos from '../data/info';
 import Navbar from "../components/Navbar/Navbar";
+import InfoSection from "../components/Info/InfoSection";
 import SoftwareSkills from "../components/SoftwareSkills/SoftwareSkills";
 
 
 const IndexPage = () => {
   return (
-      <main className="pageStyles">
+      <main className="main-container">
         <Navbar />
-        <div className="columnStyles">
-            <h1 className="headingStyles">
+            <h1 className="heading-styles">
               Jason Jugo
               <br />
-              <span className="headingAccentStyles">— Software Engineer</span>
+              <span className="heading-accent-styles">— Software Engineer</span>
             </h1>
           <div className="container">
             <h2>Building Tomorrow's Solutions, One Line of Code at a Time</h2>
           </div>
-            <p></p>
-            <div className="columnStyles">
-              <img src={profileImage} alt="Profile of Jason" className="profileStyle"/>
+            <div className="profile-container">
+              <img src={profileImage} alt="Profile of Jason"/>
             </div>
-            <div className="listContainer">
-              <div className="columnStyles">
-                <ul className="listStyles">
-                  {infos.slice(0, 2).map(info => (
-                    <li key={info.url} className="listItemStyles">
-                      <span>
-                        <a
-                          className="linkStyle"
-                          href={`${info.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-                        >
-                          {info.text}
-                        </a>
-                        <p className="descriptionStyle">{info.description}</p>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="listContainer">
-              <div className="columnStyles">
-                <ul className="listStyles">
-                  {infos.slice(2).map(info => (
-                    <li key={info.url} className="listItemStyles">
-                      <span>
-                        <a
-                          className="linkStyle"
-                          href={`${info.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-                        >
-                          {info.text}
-                        </a>
-                        <p className="descriptionStyle">{info.description}</p>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+            <InfoSection />
           <SoftwareSkills />
       </main>
   )
