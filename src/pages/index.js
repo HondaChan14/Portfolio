@@ -4,10 +4,12 @@ import '../styles/index.css'
 import Navbar from "../components/Navbar/Navbar";
 import InfoSection from "../components/Info/InfoSection";
 import SoftwareSkills from "../components/SoftwareSkills/SoftwareSkills";
+import ProjectsPage from "./Project";
 
 
 const IndexPage = () => {
   return (
+    <>
       <main className="main-container">
         <Navbar />
             <h1 className="heading-styles">
@@ -21,9 +23,11 @@ const IndexPage = () => {
             <div className="profile-container">
               <img src={profileImage} alt="Profile of Jason"/>
             </div>
-            <InfoSection />
-          <SoftwareSkills />
       </main>
+      <InfoSection />
+      <SoftwareSkills />
+      <ProjectsPage />
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 :root {
-    --clr-text: #0a0f10;
+    --clr-text: #939393;
     --clr-background: #ffffff; 
     --clr-primary: #3c4c5d; 
     --clr-secondary: #e9e9f1;
@@ -62,7 +62,7 @@ img {
 .container {
     background-color: var(--clr-accent);
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 15px;
     margin: 15px 0px;
 }
 
@@ -99,4 +99,8 @@ a:focus {
 
 ::marker {
     color: var(--clr-primary);
+}
+
+p {
+    color: var(--clr-secondary);
 }
