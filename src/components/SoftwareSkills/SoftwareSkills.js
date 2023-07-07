@@ -6,7 +6,7 @@ import skillsSection from "../../data/skillSection";
 
 export default function SoftwareSkills() {
   return (
-    <div>
+    <div className="main-container">
       <div className="skills-container">
         <ul className="dev-icons-list">
           {skillsSection && skillsSection.softwareSkills.map((skills, i) => {
