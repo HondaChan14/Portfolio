@@ -66,6 +66,14 @@ img {
     margin: 15px 0px;
 }
 
+.button-style {
+    background-color: var(--clr-secondary);
+    margin-top: 20px;
+    padding: 10px 0px;
+    border-radius: 7px;
+    font-size: var(--fs-300);
+}
+
 h1, h2, h3 {
     font-family: var(--ff-accent);
     line-height: 1.1;

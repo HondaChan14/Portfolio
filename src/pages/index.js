@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import InfoSection from "../components/Info/InfoSection";
 import SoftwareSkills from "../components/SoftwareSkills/SoftwareSkills";
 import ProjectsPage from "./Project";
+import ContactPage from "./Contact";
 
 
 const IndexPage = () => {
@@ -27,6 +28,7 @@ const IndexPage = () => {
       <InfoSection />
       <SoftwareSkills />
       <ProjectsPage />
+      <ContactPage/>
     </>
   )
 }
