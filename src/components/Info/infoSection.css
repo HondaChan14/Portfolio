@@ -1,46 +1,39 @@
 @import url("../../styles/Global.css");
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+.info-list-container {
+    list-style-type: none;
+    padding: 0px;
+}
 
-    .info-list-container {
-        list-style-type: none;
-        padding: 0px;
-    }
+.info-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-    .info-item {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-    .info-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
 
-    .info-title {
-        font-size: var(--fs-400);
-        padding-left: 40px;
-        display: flex;
-        align-self: flex-end;
-    }
+.info-title {
+    font-size: var(--fs-400);
+    padding-left: 40px;
+    display: flex;
+    align-self: flex-end;
+}
 
-    .info-icon {
-        font-size: var(--fs-500);
-        color: var(--clr-secondary);
-        padding-left: 10px;
-    }
+.info-icon {
+    font-size: var(--fs-500);
+    color: var(--clr-secondary);
+    padding-left: 10px;
+}
 
-    .info-description {
-        font-size: var(--fs-300);
-        color: var(--clr-secondary);
-        line-height: 1.25;
-    }
-
-    .profile-container {
-        margin-top: 30px;
-        margin-bottom: 80px;
-    }
+.info-description {
+    font-size: var(--fs-300);
+    color: var(--clr-secondary);
+    line-height: 1.25;
 }

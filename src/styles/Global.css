@@ -102,7 +102,7 @@ a {
 
 a:hover,
 a:focus {
-    color: var(--clr-accent);
+    color: var(--clr-secondary);
 }
 
 ::marker {
