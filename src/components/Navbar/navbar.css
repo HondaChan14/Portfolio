@@ -1,15 +1,13 @@
 @import url("../../styles/Global.css");
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media (max-width: 767px) {
   
-  .navStyles {
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 9999;
+  .nav-styles {
+      display: flex;
+      justify-content: flex-end;
   }
   
-  .menuItemsStyles {
+  .menu-items-styles {
     background-color: var(--clr-accent);
     color: var(--clr-secondary);
     position: fixed;
@@ -23,9 +21,10 @@
     overflow: auto;
     padding-top: 60px;
     padding-left: 20px;
+    padding-right: 40px;
   }
 
-  .menuBar {
+  .menu-bar {
     display: block;
     color: var(--clr-secondary);
     margin-bottom: 10px;
@@ -34,16 +33,11 @@
     padding: 10px 0px;
   }
   
-  .navButtonStyles {
+  .nav-button-styles {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin: 25px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    font-size: 2.5rem;
-    z-index: 9999;
+    font-size: 4rem;
   }
 
   .open {
@@ -55,17 +49,53 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .menuHeader {
+  .menu-header {
     font-size: 2rem;
     font-weight: bold;
   }
 
-  .iconOpen {
+  .icon-open {
     color: var(--clr-secondary);
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
   }
 
-  .iconClosed {
+  .icon-closed {
     color: var(--clr-accent);
   }
   
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+  .nav-styles {
+      display: flex;
+  }
+
+  .menu-items-styles {
+    color: var(--clr-secondary);
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
+
+  .menu-bar{
+    margin-left: 20px;
+  }
+
+  .nav-button-styles {
+    display: none;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+}
+
+/* Styles for small laptops and desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
 }
