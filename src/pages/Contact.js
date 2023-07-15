@@ -5,7 +5,7 @@ const socialMedias = [RiMailFill, RiLinkedinBoxFill, RiGithubFill, RiTwitterFill
 
 const ContactPage = () => {
     return (
-        <section className="main-container">
+        <section className="main-container" id="contact">
             <div className="container">
                 <h2>Hire me for your next project</h2>
                 <p>Get in touch with me anytime!</p>

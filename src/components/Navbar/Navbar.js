@@ -8,25 +8,29 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleLinkClick = () => {
+        setIsOpen(false)
+    };
+
     return (
         <>
-            <nav className="navStyles">
-                <button className="navButtonStyles" onClick={handleMenuToggle}>
-                {isOpen ? <TiThMenuOutline className='iconOpen'/> : <TiThMenu  className='iconClosed'/>}
+            <nav className="nav-styles">
+                <button className="nav-button-styles" onClick={handleMenuToggle}>
+                {isOpen ? <TiThMenuOutline className='icon-open'/> : <TiThMenu  className='icon-closed'/>}
                 </button>
             </nav>
 
             <div
-                className={`menuItemsStyles ${isOpen ? 'open' : 'closed'}`}
+                className={`menu-items-styles ${isOpen ? 'open' : 'closed'}`}
             >
-                <span className="menuHeader">Jason Jugo</span>
-                <a className="menuBar" href="#projects">
+                <span className="menu-header">Jason Jugo</span>
+                <a className="menu-bar" href="#projects" onClick={handleLinkClick}>
                 Projects
                 </a>
-                <a className="menuBar" href="#experience">
+                <a className="menu-bar" href="#experience" onClick={handleLinkClick}>
                 Experience
                 </a>
-                <a className="menuBar" href="#contact">
+                <a className="menu-bar" href="#contact" onClick={handleLinkClick}>
                 Contact
                 </a>
             </div>

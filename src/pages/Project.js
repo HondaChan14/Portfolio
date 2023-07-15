@@ -4,7 +4,7 @@ import projects from "../data/projectSection";
 
 const ProjectsPage = () => {
     return (
-        <section className="main-container">
+        <section className="main-container" id="projects">
             <div className="container">
                 <h2>Projects</h2>
                 <p>Explore my Projects page, where I leverage full stack technologies and diverse tools to create user-centric experiences with a focus on performance. Seamlessly integrating intuitive interfaces with robust functionality, my portfolio reflects a commitment to exceptional design and optimal user satisfaction.</p>
