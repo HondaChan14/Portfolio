@@ -18,6 +18,7 @@ const Navbar = () => {
                 <button className="nav-button-styles" onClick={handleMenuToggle}>
                 {isOpen ? <TiThMenuOutline className='icon-open'/> : <TiThMenu  className='icon-closed'/>}
                 </button>
+                <button className='theme'></button>
             </nav>
 
             <div
