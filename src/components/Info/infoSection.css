@@ -37,3 +37,12 @@
     color: var(--clr-secondary);
     line-height: 1.25;
 }
+
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 1200px) {
+
+    .column {
+        flex-basis: calc(50% - 2rem);
+        padding: 5rem 3rem;
+    }
+}
