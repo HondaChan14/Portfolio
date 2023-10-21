@@ -1,4 +1,8 @@
 @import url("Global.css");
+
+.profile {
+    box-shadow: var(--shadow);
+}
 /* For typical mobile devices */
 @media (max-width: 767px) {
 
@@ -31,5 +35,33 @@
 
 /* Styles for small laptops and desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 1200px) {
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .main-container {
+        width: min(100% - 3rem, 100ch);
+    }
+
+    .two-column-container {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .column-one {
+        flex-basis: 50%;
+    }
 }

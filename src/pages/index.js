@@ -12,20 +12,24 @@ const IndexPage = () => {
   return (
     <>
       <main className="main-container">
-        <Navbar />
-            <h1 className="heading-styles">
-              Jason Jugo
-              <br />
-              <span className="heading-accent-styles">— Software Engineer</span>
-            </h1>
-          <div className="container">
-            <h2>Building Tomorrow's Solutions, One Line of Code at a Time</h2>
-          </div>
-            <div className="profile-container">
-              <img src={profileImage} alt="Profile of Jason"/>
-            </div>
-      </main>
-      <InfoSection />
+  <Navbar />
+      <h1 className="heading-styles">
+        Jason Jugo
+        <br />
+        <span className="heading-accent-styles">— Software Engineer</span>
+      </h1>
+      <div className="container">
+        <h2>Building Tomorrow's Solutions, One Line of Code at a Time</h2>
+      </div>
+      <div className="two-column-container">
+    <div className="column-one">
+      <div className="profile-container">
+        <img src={profileImage} alt="Profile of Jason" className="profile"/>
+      </div>
+    </div>
+    <InfoSection />
+  </div>
+</main>
       <SoftwareSkills />
       <ProjectsPage />
       <ContactPage/>
