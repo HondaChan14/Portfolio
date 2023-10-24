@@ -2,6 +2,7 @@
 
 .profile {
     box-shadow: var(--shadow);
+    border-radius: 10px;
 }
 /* For typical mobile devices */
 @media (max-width: 767px) {
