@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TiThMenuOutline, TiThMenu } from 'react-icons/ti';
 import './navbar.css';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -16,9 +17,8 @@ const Navbar = () => {
         <>
             <nav className="nav-styles">
                 <button className="nav-button-styles" onClick={handleMenuToggle}>
-                {isOpen ? <TiThMenuOutline className='icon-open'/> : <TiThMenu  className='icon-closed'/>}
+                    {isOpen ? <TiThMenuOutline className='icon-open'/> : <TiThMenu  className='icon-closed'/>}
                 </button>
-                <button className='theme'></button>
             </nav>
 
             <div

@@ -134,4 +134,18 @@
   .menu-header {
     display: none;
   }
+
+  .theme-button {
+    padding: 10px;
+    border-radius: 10rem;
+    background-color: var(--clr-accent);
+  }
+
+  .sun {
+    color: var(--clr-secondary);
+  }
+
+  .moon {
+    color: var(--clr-secondary);
+  }
 }
