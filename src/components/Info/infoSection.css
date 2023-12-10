@@ -8,8 +8,8 @@
 .info-item {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px 15px;
+    margin-bottom: 10px;
 }
 
 .info-row {
@@ -17,7 +17,6 @@
     align-items: center;
     margin-bottom: 20px;
 }
-
 
 .info-title {
     font-size: var(--fs-400);
@@ -36,4 +35,13 @@
     font-size: var(--fs-300);
     color: var(--clr-secondary);
     line-height: 1.25;
+}
+
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 1200px) {
+
+    .column {
+        flex-basis: calc(50% - 2rem);
+        padding: 1rem 2rem;
+    }
 }

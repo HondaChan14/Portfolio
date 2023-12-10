@@ -6,7 +6,7 @@ import '../../components/Info/infoSection.css';
 
 export default function InfoSection() {
     return (
-        <section className="main-container">
+        <section className="main-container column">
             <ul className="info-list-container">
                 {infos.map(info => (
                     <li key={info.url} className="container info-item">

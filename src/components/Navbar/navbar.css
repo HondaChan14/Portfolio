@@ -37,7 +37,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .open {
@@ -69,13 +69,9 @@
 
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-    
-  .nav-styles {
-      display: flex;
-  }
 
   .menu-items-styles {
-    color: var(--clr-secondary);
+    color: var(--clr-primary);
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
@@ -97,5 +93,59 @@
 
 /* Styles for small laptops and desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+  .menu-items-styles {
+    color: var(--clr-primary);
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
+
+  .menu-bar{
+    font-size: var(--fs-500);
+    margin-left: 20px;
+  }
+
+  .nav-button-styles {
+    display: none;
+  }
+
+  .menu-header {
+    display: none;
+  }
+}
+
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 1200px) {
+  .menu-items-styles {
+    color: var(--clr-primary);
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
+
+  .menu-bar{
+    margin-left: 20px;
+  }
+
+  .nav-button-styles {
+    display: none;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+  .theme-button {
+    padding: 10px;
+    border-radius: 10rem;
+    background-color: var(--clr-accent);
+  }
+
+  .sun {
+    color: var(--clr-secondary);
+  }
+
+  .moon {
+    color: var(--clr-secondary);
+  }
 }

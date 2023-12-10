@@ -1,30 +1,59 @@
 :root {
+    /* Light Mode*/
     --clr-text: #939393;
     --clr-background: #ffffff; 
     --clr-primary: #3c4c5d; 
     --clr-secondary: #e9e9f1;
     --clr-accent: #3c3c5d;
-
+    --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
+    -30px -30px 70px hsl(26, 37%, 96%, .15);
+    /* Font Family */
     --ff-base:'IBM Plex Sans', sans-serif;
     --ff-accent:'IBM Plex Sans Condensed', sans-serif;
-
+    /* Font Size */
     --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem); /* Font-Size 300: 18.00px → 20.00px */
     --fs-400: clamp(1.35rem, calc(1.20rem + 0.73vw), 1.77rem); /* Font-Size 400: 21.60px → 28.28px */
     --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.50rem); /* Font-Size 500: 25.92px → 39.99px */
     --fs-600: clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem); /* Font-Size 600: 31.10px → 56.54px */
     --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5.00rem); /* Font-Size 700: 37.32px → 79.95px */
     --fs-800: clamp(2.80rem, calc(1.32rem + 7.42vw), 7.07rem); /* Font-Size 800: 44.79px → 113.05px */
+
 }
 
-@media (prefers-color-scheme: dark) {
+/* Dark Mode */
+[data-theme="dark"]{
+    /* --clr-text: #ececec;
+    --clr-background: #333333;
+    --clr-primary: #66aacc;
+    --clr-secondary: #3c3c5d;
+    --clr-accent: #e9e9f1; */
+    
+    --clr-text: #ececec; /* Adjusted text color for dark mode */
+    --clr-background: #333333; /* Dark background color */
+    --clr-primary: #66aacc; /* Adjusted primary color for dark mode */
+    --clr-secondary: #f1c16e; /* Adjusted secondary color for dark mode */
+    --clr-accent: #e68f6f;
+}
+
+/* @media (prefers-color-scheme: dark) {
     :root {
-        --clr-text: #ececec;
-        --clr-background: #333333;
-        --clr-primary: #66aacc;
-        --clr-secondary: #f1c16e;
-        --clr-accent: #e68f6f;
+        --clr-text: var(--text-dark);
+        --clr-background: var(--background-dark);
+        --clr-primary: var(--primary-dark);
+        --clr-secondary: var(--secondary-dark);
+        --clr-accent: var(--accent-dark);
     }
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --clr-text: #939393;
+        --clr-background: #ffffff; 
+        --clr-primary: #3c4c5d; 
+        --clr-secondary: #e9e9f1;
+        --clr-accent: #3c3c5d;
+    }
+} */
 
 *,
 *::before,
@@ -37,7 +66,7 @@
 }
 
 html {
-    color-scheme: light dark;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -45,10 +74,11 @@ img {
     display: block;
 }
 
+body {
+    background-color: var(--clr-background);
+}
+
 .main-container {
-    /* padding: 15px;
-    display: flex;
-    flex-direction: column; */
     font-family: var(--ff-base);
     font-size: var(--fs-400);
     background-color: var(--clr-background);
@@ -98,15 +128,6 @@ h3 {
 a {
     color: var(--clr-primary);
     text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: var(--clr-secondary);
-}
-
-::marker {
-    color: var(--clr-primary);
 }
 
 p {

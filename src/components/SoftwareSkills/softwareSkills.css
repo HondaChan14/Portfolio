@@ -1,33 +1,23 @@
-.skills-container {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    padding: 40px;
-    background-color: var(--clr-accent);
+@import url("../../styles/Global.css");
+
+.dev-icons-list {
+    text-align: center;
+    padding-left: 0rem;
 }
 
 .dev-icon-container {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0rem 0.5rem;
 }
 
-.dev-icons-list {
-    list-style: none;
-    font-size: 3rem;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: center;
-    padding-left: 2px;
-    margin-left: 15px;
+.dev-icon {
+    width: 50px;
+    height: 50px;
 }
 
-.dev-icons-list:hover {
-    color: var(--clr-secondary);
-}
-
-.skills-container {
-    padding: 20px;
-    border-radius: 10px;
+.dev-icon-wide {
+    width: 120px;
+    height: 30px;
 }
 
 /* For typical mobile devices */
@@ -52,8 +42,8 @@
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .dev-icon-container {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
         color: var(--clr-secondary);
     }
 
@@ -66,7 +56,23 @@
     }
 }
 
-/* Styles for small laptops and desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-    
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 1200px) {
+    .dev-icon-container {
+        margin-right: 15px;
+        margin-left: 15px;
+        color: var(--clr-secondary);
+    }
+
+    .dev-icons-list {
+        font-size: var(--fs-700);
+    }
+
+    .fa-icon {
+        font-size: var(--fs-700);
+    }
+
+    .dev-icons-list:hover {
+        color: var(--clr-secondary);
+    }
 }
