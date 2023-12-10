@@ -54,7 +54,7 @@
     }
 
     .main-container {
-        width: min(100% - 3rem, 100ch);
+        width: min(100% - 14rem, 100ch);
     }
 
     .two-column-container {
@@ -63,6 +63,6 @@
     }
 
     .column-one {
-        flex-basis: 50%;
+        flex-basis: 44%;
     }
 }
