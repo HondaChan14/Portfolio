@@ -74,10 +74,6 @@ img {
     display: block;
 }
 
-body {
-    background-color: var(--clr-background);
-}
-
 .main-container {
     font-family: var(--ff-base);
     font-size: var(--fs-400);
