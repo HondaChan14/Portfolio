@@ -1,25 +1,17 @@
-import React from "react";
-import "./softwareSkills.css";
-import skillsSection from "../../data/skillSection";
+import React from 'react';
+import './softwareSkills.css';
+import Skills from './Skills';
+import { frontend, backend, devops, apidev, hosting } from '../../data/skillSection';
 
+const skillCategories = [ frontend, backend, devops, apidev, hosting ]
 
 export default function SoftwareSkills() {
   return (
     <div className="main-container">
-      <div className="container">
-        <ul className="dev-icons-list">
-          {skillsSection && skillsSection.softwareSkills.map((skill, i) => {
-            return (
-              <li
-                key={i}
-                className="dev-icon-container"
-              >
-                {skill.skillIcon}
-                <p>{skill.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="container column">
+        {skillCategories && skillCategories.map((category, index) => (
+          <Skills key={index} skills={category} />
+        ))}
       </div>
     </div>
   );
