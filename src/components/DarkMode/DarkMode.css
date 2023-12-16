@@ -47,7 +47,7 @@
 .dark_mode_label svg {
     position: absolute;
     width: 20px;
-    top: 2%;
+    top: 15%;
     z-index: 100;
 }
 .dark_mode_label .sun {
