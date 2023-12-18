@@ -1,78 +1,44 @@
 @import url("../../styles/Global.css");
 
-.dev-icons-list {
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px 0 0 0;
     text-align: center;
-    padding-left: 0rem;
 }
 
-.dev-icon-container {
-    display: inline-block;
-    padding: 0rem 0.5rem;
-}
-
-.dev-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.dev-icon-wide {
-    width: 120px;
+.dev-icon-wide svg{
+    width: 220px;
     height: 30px;
 }
 
-/* For typical mobile devices */
-@media (max-width: 767px) {
-
-    .dev-icon-container {
-        margin-right: 8px;
-        margin-left: 8px;
-        color: var(--clr-secondary);
-    }
-
-    .dev-icons-list {
-        font-size: var(--fs-400);
-    }
-
-    .fa-icon {
-        font-size: var(--fs-700);
-    }
-    
+.dev-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
 }
+
+/* For typical mobile devices */
+/* @media (max-width: 767px) {
+} */
 
 /* Styles for tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-    .dev-icon-container {
-        padding-right: 10px;
-        padding-left: 10px;
-        color: var(--clr-secondary);
-    }
-
-    .dev-icons-list {
-        font-size: var(--fs-500);
-    }
-
-    .fa-icon {
-        font-size: var(--fs-700);
-    }
-}
+/* @media (min-width: 768px) and (max-width: 991px) {
+} */
 
 /* Styles for larger devices like large laptops and desktops */
 @media (min-width: 1200px) {
-    .dev-icon-container {
-        margin-right: 15px;
-        margin-left: 15px;
-        color: var(--clr-secondary);
-    }
 
-    .dev-icons-list {
-        font-size: var(--fs-700);
-    }
 
-    .fa-icon {
-        font-size: var(--fs-700);
-    }
-
-    .dev-icons-list:hover {
-        color: var(--clr-secondary);
+    figcaption:hover {
+        color: var(--clr-primary);
     }
 }
