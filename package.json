@@ -21,6 +21,7 @@
     "@mdx-js/react": "^2.3.0",
     "@vanilla-extract/css": "^1.11.1",
     "@vanilla-extract/webpack-plugin": "^2.2.0",
+    "caniuse-lite": "^1.0.30001599",
     "gatsby": "^5.10.0",
     "gatsby-plugin-mdx": "^5.10.0",
     "gatsby-plugin-vanilla-extract": "^4.0.1",
