@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Jason-Portfolio-2023`,
-    siteUrl: `jasonjugo.dev`
+    title: `Jason Portfolio 2024`,
+    siteUrl: `https://jasonjugo.dev`
   },
   plugins: ["gatsby-plugin-vanilla-extract", "gatsby-plugin-mdx", "gatsby-plugin-netlify", {
     resolve: 'gatsby-source-filesystem',
