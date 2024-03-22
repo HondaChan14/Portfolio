@@ -1,6 +1,6 @@
 @import url("Global.css");
 /* For typical mobile devices */
-h2 {
+.project-header {
     margin-bottom: 15px;
 }
 
@@ -11,7 +11,7 @@ h2 {
     margin-top: 20px;
 }
 
-p {
+.project-info {
     font-size: var(--fs-300);
     color: var(--clr-text);
 }
@@ -36,12 +36,20 @@ p {
 
 @media (min-width: 1200px) {
 
+    .project-header {
+        padding: 0px 150px;
+    }
+
+    .project-info {
+        padding: 0px 150px;
+    }
+
     .project-container {
-        padding: 40px;
+        padding: 0px 150px;
     }
 
     img {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 }

@@ -9,7 +9,7 @@
 
 .form-container > input {
     background-color: var(--clr-secondary);
-    padding: 5px 10px;
+    padding: 15px 10px;
     border-radius: 7px;
 }
 
@@ -17,7 +17,7 @@
     background-color: var(--clr-secondary);
     padding: 10px;
     border-radius: 7px;
-    height: 200px;
+    height: 300px;
 }
 
 .social-media-container {
@@ -25,6 +25,10 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+.social-media-icon {
+    color: var(--clr-secondary);
 }
 
 p {
@@ -41,9 +45,40 @@ p {
 /* Styles for small laptops and desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     
+    .form-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
 }
 
 /* Styles for larger devices like large laptops and desktops */
 @media (min-width: 1200px) {
     
+    .form-container {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .form-header {
+        padding-left: 100px;
+    }
+
+    .form-tagline {
+        padding-left: 100px;
+    }
+
+    .social-media-container {
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .social-media-icon:hover {
+        color: var(--clr-primary)
+    }
+
+    .social-media-icon::after {
+        color: var(--clr-secondary)
+    }
+
 }

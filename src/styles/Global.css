@@ -1,6 +1,6 @@
 :root {
     /* Light Mode*/
-    --clr-text: #939393;
+    --clr-text: #e9e9f1;
     --clr-background: #ffffff; 
     --clr-primary: #3c4c5d; 
     --clr-secondary: #e9e9f1;
@@ -104,25 +104,24 @@ body {
     font-size: var(--fs-300);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--ff-accent);
     line-height: 1.1;
     text-wrap: balance;
 }
 
+h2, h3, h4 {
+    color: var(--clr-secondary);
+}
+
 h1 {
-    font-size: var(--fs-700);
     color: var(--clr-primary);
 }
 
-h2 {
-    font-size: var(--fs-600);
-    color: var(--clr-secondary);
-}
-
-h3 {
-    font-size: var(--fs-500);
-    color: var(--clr-secondary);
+h4 {
+    text-align: center;
+    border-top: 2px solid rgb(106, 111, 178);
+    padding-top: 3px;
 }
 
 a {
@@ -131,5 +130,14 @@ a {
 }
 
 p {
+    color: var(--clr-secondary);
+}
+
+figcaption {
+    color: var(--clr-secondary);
+    padding: 0px 10px;
+}
+
+label {
     color: var(--clr-secondary);
 }

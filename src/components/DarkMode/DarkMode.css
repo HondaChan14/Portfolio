@@ -47,7 +47,7 @@
 .dark_mode_label svg {
     position: absolute;
     width: 20px;
-    top: 2%;
+    top: 15%;
     z-index: 100;
 }
 .dark_mode_label .sun {
@@ -65,4 +65,21 @@
 }
 .dark_mode_input:checked + .dark_mode_label .moon {
     fill: #fff;
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .dark_mode_label svg {
+        top: 10%;
+    }
+}
+
+/* Styles for larger devices like large laptops and desktops */
+@media (min-width: 992px) {
+
+    .dark_mode_label svg {
+        top: 7%;
+    }
+
 }
